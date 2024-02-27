@@ -4,6 +4,10 @@
 }
 
 body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/012/484/301/non_2x/pixel-cityscape-8-bit-pixel-art-game-landscape-vector.jpg');
+  background-position: cover;
+  background-position: bottom;
+  background-position: fixed;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -56,4 +60,11 @@ body {
   left: calc(var(--left) * 1%);
   height: 30%;
   bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url('./imgs/city-phone.png');
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
